@@ -161,6 +161,10 @@ button {
      * @returns {boolean} True se o formulário for válido, false caso contrário.
      */
     function validarFormulario(modelo) {
+        // Regex para validação de telefone no formato 55 XX YYYYY-YYYY ou 55 XX YYYY-YYYY,
+        // com opcional | e outro número no mesmo formato.
+        const phoneRegex = /^55\s\d{2}\s\d{4,5}-\d{4}(?:\s\|\s55\s\d{2}\s\d{4,5}-\d{4})?$/;
+
         if (modelo === 'original') {
             const nomeOriginal = document.getElementById('nome_original').value.trim();
             const setorOriginal = document.getElementById('setor_original').value.trim();
@@ -195,15 +199,13 @@ button {
                 }
             }
 
-
-
             if (!emailOriginal || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailOriginal)) {
                 alert('Por favor, insira um e-mail válido.');
                 return false;
             }
-            if (telefoneOriginal && !/^\d{2} \d{2} \d{4,5}-\d{4}( \| \d{2} \d{2} \d{4,5}-\d{4})?$/.test(
-                    telefoneOriginal)) {
-                alert('Por favor, insira um telefone válido no formato: 55 11 3397-XXXX.');
+            // APLICAÇÃO DA NOVA REGEX
+            if (telefoneOriginal && !phoneRegex.test(telefoneOriginal)) {
+                alert('Por favor, insira um telefone válido no formato: 55 XX YYYYY-YYYY ou 55 XX YYYY-YYYY. Para dois números, use: 55 XX YYYYY-YYYY | 55 XX YYYYY-YYYY.');
                 return false;
             }
             return true;
@@ -231,8 +233,9 @@ button {
                 alert('Por favor, insira um e-mail válido.');
                 return false;
             }
-            if (telefoneNovo && !/^\d{2} \d{2} \d{4,5}-\d{4}$/.test(telefoneNovo)) {
-                alert('Por favor, insira um telefone válido no formato: 55 11 3397-XXXX.');
+            // APLICAÇÃO DA NOVA REGEX
+            if (telefoneNovo && !phoneRegex.test(telefoneNovo)) {
+                alert('Por favor, insira um telefone válido no formato: 55 XX YYYYY-YYYY ou 55 XX YYYY-YYYY. Para dois números, use: 55 XX YYYYY-YYYY | 55 XX YYYYY-YYYY.');
                 return false;
             }
             return true;
