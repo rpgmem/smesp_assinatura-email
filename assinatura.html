@@ -3,49 +3,71 @@
         <div>
             <label for="modelo"><strong>Selecione o Modelo de Assinatura:</strong></label>
             <select id="modelo">
-                <option value="original">Assinatura DRE</option>
-                <option value="novo">Assinatura Escola</option>
+                <option value="servidor_dre">Servidores - DRE</option>
+                <option value="servidor_escola">Servidores - Escola</option>
+                <option value="setor_dre_escola">Setores DRE / Prédio Escola</option>
             </select>
         </div>
 
         <div id="modelo-original-campos">
             <label for="nome_original">Nome: <input type="text" id="nome_original" placeholder="Digite seu nome completo"
-                    aria-label="Digite seu nome completo"></label>
+                        aria-label="Digite seu nome completo"></label>
             <label for="setor_original">Cargo / Setor: <input type="text" id="setor_original" value="NTIC / DREMP"></label>
             <label for="email_original">E-mail: <input type="email" id="email_original" value="TESTE@sme.prefeitura.sp.gov.br"></label>
             <label for="telefone_original">Telefone(s): <input type="text" id="telefone_original"
-                    value="55 11 3397-XXXX | 55 11 3397-YYYY"></label>
+                        value="55 11 3397-XXXX | 55 11 3397-YYYY"></label>
             <label for="endereco_original">Endereço | Andar | Sala: <input type="text" id="endereco_original"
-                    value="Av. Nordestina, 747 | 2º Andar | 226"></label>
+                        value="Av. Nordestina, 747 | 2º Andar | 226"></label>
             <label for="cep_original">CEP | Cidade | Estado: <input type="text" id="cep_original"
-                    value="08021-000 | São Paulo | SP"></label>
+                        value="08021-000 | São Paulo | SP"></label>
             <label for="link1_original">Link 1: <input type="url" id="link1_original" value="educacao.sme.prefeitura.sp.gov.br"></label>
             <label for="link2_original">Link 2: <input type="url" id="link2_original"
-                    placeholder="Digite um segundo link, caso necessário"
-                    aria-label="Digite um segundo link, caso necessário"></label>
+                        placeholder="Digite um segundo link, caso necessário"
+                        aria-label="Digite um segundo link, caso necessário"></label>
             <input type="hidden" id="imagem_original" value="https://dresaomiguel.com.br/wp-content/uploads/2025/05/SME_SP.png">
         </div>
 
         <div id="modelo-novo-campos" style="display: none;">
             <label for="nome_novo">Nome Completo: <input type="text" id="nome_novo"
-                    placeholder="Digite seu nome completo" aria-label="Digite seu nome completo"></label>
+                        placeholder="Digite seu nome completo" aria-label="Digite seu nome completo"></label>
             <label for="setor_novo">Cargo: <input type="text" id="setor_novo" value="Secretário Escolar"></label>
             <label for="email_novo">E-mail: <input type="email" id="email_novo"
-                    value="TESTE@sme.prefeitura.sp.gov.br"></label>
+                        value="TESTE@sme.prefeitura.sp.gov.br"></label>
             <label for="telefone_novo">Telefone(s): <input type="text" id="telefone_novo"
-                    value="55 11 3397-XXXX | 55 11 3397-YYYY"></label>
+                        value="55 11 3397-XXXX | 55 11 3397-YYYY"></label>
             <label for="escola_novo">Escola / DRE: <input type="text" id="escola_novo"
-                    value="EMEF Joaquim José da Silva Xavier / DREMP"></label>
+                        value="EMEF Joaquim José da Silva Xavier / DREMP"></label>
             <label for="endereco_novo">Endereço | Andar | Sala: <input type="text" id="endereco_novo"
-                    value="Av. Nordestina, 747 | 2º Andar | 226"></label>
+                        value="Av. Nordestina, 747 | 2º Andar | 226"></label>
             <label for="cep_novo">CEP | Cidade | Estado: <input type="text" id="cep_novo"
-                    value="08021-000 | São Paulo | SP"></label>
+                        value="08021-000 | São Paulo | SP"></label>
             <label for="link1_novo">Link 1: <input type="url" id="link1_novo"
-                    value="educacao.sme.prefeitura.sp.gov.br"></label>
+                        value="educacao.sme.prefeitura.sp.gov.br"></label>
             <label for="link2_novo">Link 2: <input type="url" id="link2_novo"
-                    placeholder="Digite um segundo link, caso necessário"
-                    aria-label="Digite um segundo link, caso necessário"></label>
+                        placeholder="Digite um segundo link, caso necessário"
+                        aria-label="Digite um segundo link, caso necessário"></label>
             <input type="hidden" id="logo_novo" value="https://dresaomiguel.com.br/wp-content/uploads/2025/05/SME_SP.png">
+        </div>
+
+        <div id="modelo-setor-campos" style="display: none;">
+            <label for="nome_setor">Setor ou Escola: <input type="text" id="nome_setor"
+                        value="EMEF Joaquim José da Silva Xavier"></label>
+            <label for="email_setor">E-mail: <input type="email" id="email_setor"
+                        value="TESTE@sme.prefeitura.sp.gov.br"></label>
+            <label for="telefone_setor">Telefone(s): <input type="text" id="telefone_setor"
+                        value="55 11 3397-XXXX | 55 11 3397-YYYY"></label>
+            <label for="dre_setor">DRE: <input type="text" id="dre_setor"
+                        value="Diretoria Regional de Educação de São Miguel / DREMP"></label>
+            <label for="endereco_setor">Endereço | Andar | Sala: <input type="text" id="endereco_setor"
+                        value="Av. Nordestina, 747 | 2º Andar | 226"></label>
+            <label for="cep_setor">CEP | Cidade | Estado: <input type="text" id="cep_setor"
+                        value="08021-000 | São Paulo | SP"></label>
+            <label for="link1_setor">Link 1: <input type="url" id="link1_setor"
+                        value="educacao.sme.prefeitura.sp.gov.br"></label>
+            <label for="link2_setor">Link 2: <input type="url" id="link2_setor"
+                        placeholder="Digite um segundo link, caso necessário"
+                        aria-label="Digite um segundo link, caso necessário"></label>
+            <input type="hidden" id="logo_setor" value="https://dresaomiguel.com.br/wp-content/uploads/2025/05/SME_SP.png">
         </div>
 
         <button type="button" id="gerar">Gerar Assinatura</button>
@@ -131,6 +153,7 @@ button {
     // Obtém os elementos dos campos de entrada para os diferentes modelos de assinatura.
     const modeloOriginalCampos = document.getElementById('modelo-original-campos');
     const modeloNovoCampos = document.getElementById('modelo-novo-campos');
+    const modeloSetorCampos = document.getElementById('modelo-setor-campos');
     const modeloSelect = document.getElementById('modelo');
     const gerarButton = document.getElementById('gerar');
     const copiarButton = document.getElementById('copiar');
@@ -138,15 +161,26 @@ button {
 
     // Adiciona um listener para o evento de mudança no select de modelo de assinatura.
     modeloSelect.addEventListener('change', () => {
+        // Esconde todos os campos primeiro
+        modeloOriginalCampos.style.display = 'none';
+        modeloNovoCampos.style.display = 'none';
+        modeloSetorCampos.style.display = 'none';
+
         // Exibe os campos de entrada corretos com base no modelo de assinatura selecionado.
-        if (modeloSelect.value === 'original') {
+        if (modeloSelect.value === 'servidor_dre') {
             modeloOriginalCampos.style.display = 'block';
-            modeloNovoCampos.style.display = 'none';
-        } else {
-            modeloOriginalCampos.style.display = 'none';
+        } else if (modeloSelect.value === 'servidor_escola') {
             modeloNovoCampos.style.display = 'block';
+        } else if (modeloSelect.value === 'setor_dre_escola') {
+            modeloSetorCampos.style.display = 'block';
         }
     });
+
+    // Dispara o evento 'change' no carregamento da página para exibir o modelo padrão
+    document.addEventListener('DOMContentLoaded', () => {
+        modeloSelect.dispatchEvent(new Event('change'));
+    });
+
 
     /**
      * Garante que a URL esteja completa, adicionando o protocolo 'https://' se necessário.
@@ -157,15 +191,15 @@ button {
 
     /**
      * Valida os campos do formulário com base no modelo de assinatura selecionado.
-     * @param {string} modelo - O modelo de assinatura selecionado ('original' ou 'novo').
+     * @param {string} modelo - O modelo de assinatura selecionado ('servidor_dre', 'servidor_escola' ou 'setor_dre_escola').
      * @returns {boolean} True se o formulário for válido, false caso contrário.
      */
     function validarFormulario(modelo) {
-        // Regex para validação de telefone no formato 55 XX YYYYY-YYYY ou 55 XX YYYY-YYYY,
+        // Regex para validação de telefone no formato 55 XX YYYYY-YYYY ou 55 XX XXXX-YYYY,
         // com opcional | e outro número no mesmo formato.
         const phoneRegex = /^55\s\d{2}\s\d{4,5}-\d{4}(?:\s\|\s55\s\d{2}\s\d{4,5}-\d{4})?$/;
 
-        if (modelo === 'original') {
+        if (modelo === 'servidor_dre') {
             const nomeOriginal = document.getElementById('nome_original').value.trim();
             const setorOriginal = document.getElementById('setor_original').value.trim();
             const emailOriginal = document.getElementById('email_original').value.trim();
@@ -205,11 +239,11 @@ button {
             }
             // APLICAÇÃO DA NOVA REGEX
             if (telefoneOriginal && !phoneRegex.test(telefoneOriginal)) {
-                alert('Por favor, insira um telefone válido no formato: 55 XX YYYYY-YYYY ou 55 XX YYYY-YYYY. Para dois números, use: 55 XX YYYYY-YYYY | 55 XX YYYYY-YYYY.');
+                alert('Por favor, insira um telefone válido no formato: 55 XX YYYYY-YYYY ou 55 XX XXXX-YYYY. Para dois números, use: 55 XX YYYYY-YYYY | 55 XX YYYYY-YYYY.');
                 return false;
             }
             return true;
-        } else if (modelo === 'novo') {
+        } else if (modelo === 'servidor_escola') {
             const nomeNovo = document.getElementById('nome_novo').value.trim();
             const setorNovo = document.getElementById('setor_novo').value.trim();
             const emailNovo = document.getElementById('email_novo').value.trim();
@@ -235,7 +269,31 @@ button {
             }
             // APLICAÇÃO DA NOVA REGEX
             if (telefoneNovo && !phoneRegex.test(telefoneNovo)) {
-                alert('Por favor, insira um telefone válido no formato: 55 XX YYYYY-YYYY ou 55 XX YYYY-YYYY. Para dois números, use: 55 XX YYYYY-YYYY | 55 XX YYYYY-YYYY.');
+                alert('Por favor, insira um telefone válido no formato: 55 XX YYYYY-YYYY ou 55 XX XXXX-YYYY. Para dois números, use: 55 XX YYYYY-YYYY | 55 XX YYYYY-YYYY.');
+                return false;
+            }
+            return true;
+        } else if (modelo === 'setor_dre_escola') {
+            const nomeSetor = document.getElementById('nome_setor').value.trim();
+            const emailSetor = document.getElementById('email_setor').value.trim();
+            const telefoneSetor = document.getElementById('telefone_setor').value.trim();
+            const dreSetor = document.getElementById('dre_setor').value.trim();
+
+            if (!nomeSetor) {
+                alert('O campo "Setor ou Escola" é obrigatório.');
+                return false;
+            }
+            if (!dreSetor) {
+                alert('O campo "DRE" é obrigatório.');
+                return false;
+            }
+
+            if (!emailSetor || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailSetor)) {
+                alert('Por favor, insira um e-mail válido.');
+                return false;
+            }
+            if (telefoneSetor && !phoneRegex.test(telefoneSetor)) {
+                alert('Por favor, insira um telefone válido no formato: 55 XX YYYYY-YYYY ou 55 XX XXXX-YYYY. Para dois números, use: 55 XX YYYYY-YYYY | 55 XX YYYYY-YYYY.');
                 return false;
             }
             return true;
@@ -295,22 +353,22 @@ button {
 
         if (!validarFormulario(modeloSelecionado)) return;
 
-        let nome, setor, email, telefone, endereco, cep, link1, link2, imagem, escola;
+        let nome, setor, email, telefone, endereco, cep, link1, link2, imagem, escola, dre;
 
-        if (modeloSelecionado === 'original') {
+        if (modeloSelecionado === 'servidor_dre') {
             nome = document.getElementById('nome_original').value.trim().toUpperCase();
             setor = document.getElementById('setor_original').value.trim();
-            email = document.getElementById('email_original').value.trim();
+            email = document.getElementById('email_original').value.trim().toLowerCase(); // Convertido para caixa baixa
             telefone = document.getElementById('telefone_original').value.trim();
             endereco = document.getElementById('endereco_original').value.trim();
             cep = document.getElementById('cep_original').value.trim();
             link1 = corrigirUrl(document.getElementById('link1_original').value.trim());
             link2 = corrigirUrl(document.getElementById('link2_original').value.trim());
             imagem = document.getElementById('imagem_original').value.trim();
-        } else if (modeloSelecionado === 'novo') {
+        } else if (modeloSelecionado === 'servidor_escola') {
             nome = document.getElementById('nome_novo').value.trim().toUpperCase();
             setor = document.getElementById('setor_novo').value.trim();
-            email = document.getElementById('email_novo').value.trim();
+            email = document.getElementById('email_novo').value.trim().toLowerCase(); // Convertido para caixa baixa
             telefone = document.getElementById('telefone_novo').value.trim();
             endereco = document.getElementById('endereco_novo').value.trim();
             cep = document.getElementById('cep_novo').value.trim();
@@ -318,6 +376,18 @@ button {
             link2 = corrigirUrl(document.getElementById('link2_novo').value.trim());
             imagem = document.getElementById('logo_novo').value.trim();
             escola = document.getElementById('escola_novo').value.trim();
+        } else if (modeloSelecionado === 'setor_dre_escola') {
+            nome = document.getElementById('nome_setor').value.trim().toUpperCase();
+            email = document.getElementById('email_setor').value.trim().toLowerCase(); // Convertido para caixa baixa
+            telefone = document.getElementById('telefone_setor').value.trim();
+            dre = document.getElementById('dre_setor').value.trim();
+            endereco = document.getElementById('endereco_setor').value.trim();
+            cep = document.getElementById('cep_setor').value.trim();
+            link1 = corrigirUrl(document.getElementById('link1_setor').value.trim());
+            link2 = corrigirUrl(document.getElementById('link2_setor').value.trim());
+            imagem = document.getElementById('logo_setor').value.trim();
+            setor = '';
+            escola = '';
         }
 
         if (link1 && !validarLinks(link1)) {
@@ -354,9 +424,11 @@ button {
             color: #000;
         `;
 
-        let escolaHTML = '';
-        if (modeloSelecionado === 'novo') {
-            escolaHTML = `<div style="margin: 0; padding: 0; font-size: 8px; line-height: 1.2;">${escola}</div>`;
+        let escolaOuDreHTML = '';
+        if (modeloSelecionado === 'servidor_escola' && escola) {
+            escolaOuDreHTML = `<div style="margin: 0; padding: 0; font-size: 8px; line-height: 1.2;">${escola}</div>`;
+        } else if (modeloSelecionado === 'setor_dre_escola' && dre) {
+            escolaOuDreHTML = `<div style="margin: 0; padding: 0; font-size: 8px; line-height: 1.2;">${dre}</div>`;
         }
 
         // HTML da assinatura com estrutura de tabela
@@ -368,11 +440,11 @@ button {
                     </td>
                     <td valign="middle" style="${tdContentStyle}">
                         ${nome ? `<div style="margin: 0; padding: 0; font-size: 16px; text-transform: uppercase; line-height: 1.2;"><strong style="font-size: inherit;">${nome}</strong></div>` : ''}
-                        ${setor ? `<div style="margin: 0; padding: 0; font-size: 7px; text-transform: uppercase; line-height: 1.2;">${setor}</div>` : ''}
+                        ${((modeloSelecionado === 'servidor_dre' || modeloSelecionado === 'servidor_escola') && setor) ? `<div style="margin: 0; padding: 0; font-size: 7px; text-transform: uppercase; line-height: 1.2;">${setor}</div>` : ''}
                         <div style="margin: 0; padding: 0; font-size: 7px; line-height: 1.2; color:#FFFFFF;">_</div>
                         ${email ? `<div style="margin: 0; padding: 0; font-size: 8px; line-height: 1.2;"><a href="mailto:${email}" style="text-decoration: none; color: inherit;">${email}</a></div>` : ''}
                         ${telefone ? `<div style="margin: 0; padding: 0; font-size: 8px; line-height: 1.2;">Tel.: ${telefone}</div>` : ''}
-                        ${escolaHTML}
+                        ${escolaOuDreHTML}
                         ${endereco ? `<div style="margin: 0; padding: 0; font-size: 8px; line-height: 1.2;">${endereco}</div>` : ''}
                         ${cep ? `<div style="margin: 0; padding: 0; font-size: 8px; line-height: 1.2;">${cep}</div>` : ''}
                         ${linksHTML}
@@ -462,14 +534,18 @@ button {
             return;
         }
 
-        if (modeloSelecionado === 'original') {
+        if (modeloSelecionado === 'servidor_dre') {
             nomeArquivo = document.getElementById('nome_original').value.trim().replace(/\s+/g, '_') ||
-                'assinatura_original';
+                'assinatura_servidor_dre';
             nomeArquivo += '_DRE';
-        } else if (modeloSelecionado === 'novo') {
+        } else if (modeloSelecionado === 'servidor_escola') {
             nomeArquivo = document.getElementById('nome_novo').value.trim().replace(/\s+/g, '_') ||
-                'assinatura_novo';
+                'assinatura_servidor_escola';
             nomeArquivo += '_Escola';
+        } else if (modeloSelecionado === 'setor_dre_escola') {
+            nomeArquivo = document.getElementById('nome_setor').value.trim().replace(/\s+/g, '_') ||
+                'assinatura_setor_dre_escola';
+            nomeArquivo += '_DRE_Escola';
         }
 
         const tempContainer = document.createElement('div');
