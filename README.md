@@ -1,10 +1,14 @@
 # Gerador de Assinatura de E-mail
 
-Este projeto é uma ferramenta baseada em navegador para criar assinaturas de e-mail personalizadas. Ele permite que os usuários selecionem diferentes modelos, preencham suas informações e gerem uma assinatura em HTML que pode ser copiada para clientes de e-mail como o Outlook, ou baixada como uma imagem JPG.
+Este projeto é uma ferramenta baseada em navegador para criar assinaturas de e-mail personalizadas para a Secretaria de Educação da Prefeitura de São Paulo.
+
+Ele permite que os usuários selecionem diferentes modelos, preencham suas informações e gerem uma assinatura em HTML que pode ser copiada para clientes de e-mail como o Outlook, ou baixada como uma imagem JPG.
+
+Pode ser adaptada para diferentes propósitos e/ou secretarias do município.
 
 ## Como Usar
 
-1.  **Abra o arquivo `assinatura.html` em seu navegador.**
+1.  **Abra o arquivo `assinatura.html` em seu navegador (idealmente baixe e coloquei em sua página).**
 2.  **Selecione o Modelo de Assinatura:**
     *   Escolha entre os modelos disponíveis no menu suspenso (por exemplo, "Servidores - DRE", "Servidores - Escola", "Setores DRE / Prédio Escola").
 3.  **Preencha os Campos:**
